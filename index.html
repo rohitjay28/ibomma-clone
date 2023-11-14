@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <title>IBOMMA</title>
+    <link rel = "icon" href ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY1DNamuts0xGEX0F0R2LaipF6fR3PksdceNpauDmQ7A&s"
+        type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="logo" href="index.html">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.webp">
+            <link rel="logo" href="index.html">
+        </div>
+        <div class="nav-items">
+            <a href="index.html"><i class="fa-solid fa-home"></i>Home</a>
+            <a href="info.html"><i class="fa-solid fa-circle-info"></i>Info</a>
+            <a href="bug.html"><i class="fa-solid fa-bug"></i>Bug</a>
+        </div>
+        <form action="#">
+            <input type="search"class="search-data" placeholder="search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+    <div class="con2">
+        <div class="open-con">
+            <div style="width: 150px;height:130px;box-sizing: border-box;"><img style="width: 100%;height:100%" src="logo.webp" alt=""></div>
+            <p>100% Telugu Entertainment</p>
+            <button onclick="hlo()">ENTER</button>
+            <p>Watch iBOMMA.ONE Telugu movies online in HD quality</p>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Where Quality & Clarity Matters</h1>
+        <p>watch / download telugu movies in an excellent quality at small file size <br> exclusively designed and developed for smart phones,pcs</p>
+        <button>HIN
+            <div class="submenu">
+                <div>Animal</div>
+                <div>Gadar2</div>
+                <div>Jawan</div>
+                <div>Fukrey</div>
+                <div>Pathaan</div>
+            </div>
+        </button>
+        <button>TEL
+            <div class="submenu">
+                <div>Kushi</div>
+                <div>Bro</div>
+                <div>Spy</div>
+                <div>Ustaad</div>
+                <div>Ugram</div>
+            </div>
+        </button>
+        <button>ENG
+            <div class="submenu">
+                <div>Barbie</div>
+                <div>Oppenheimer</div>
+                <div>Meg 2</div>
+                <div>Rebel Moon</div>
+                <div>The Flash</div>
+            </div>
+        </button>
+        <button>TAM
+            <div class="submenu">
+                <div>Jailer</div>
+                <div>Varisu</div>
+                <div>Thunivu</div>
+                <div>Kolai</div>
+                <div>Dada</div>
+            </div>
+        </button>
+        <button>KAN
+            <div class="submenu">
+                <div>Love Mocktail</div>
+                <div>Kabzaa</div>
+                <div>Kranti</div>
+                <div>Kantara</div>
+                <div>Lucky man</div>
+            </div>
+        </button>
+    </div>
+    <div class="con">
+        <i class="left fa-solid fa-less-than" onclick="fun2()"></i>
+        <div class="c1"><img class="pc" src="2.jpg"></a></div>
+        <div class="c2"><img class="pc" src="3.jpg"></div>
+        <div class="c3"><img class="pc" src="4.jpg"></div>
+        <div class="c4"><img class="pc" src="5.jpg"></div>
+        <i class="right fa-solid fa-greater-than" onclick="fun1()"></i>
+    </div>
+    <script>
+        i=0
+        let a=["1.webp","2.jpg","3.jpg","4.jpg","5.jpg","6.jpeg","7.jpeg","8.jpg","9.webp"]
+        function fun1()
+        {
+            i++
+            if(i>8)
+            {
+                i=0
+            }
+            let imgref=document.getElementsByClassName("pc")
+            for(let j=0;j<imgref.length;j++)
+            {
+                imgref[j].src=a[(i+j)%9]
+            }
+        }
+        function fun2()
+        {
+            i--
+            if(i<0)
+            {
+                i=8
+            }
+            let imgref=document.getElementsByClassName("pc")
+            for(let j=0;j<imgref.length;j++)
+            {
+                imgref[j].src=a[(i+j)%9]
+            }
+        }
+        let top1=()=>{
+            document.getElementsByClassName("con2")[0].style.display="flex"
+            console.log("hello")
+        }
+        setTimeout(top1,500)
+        function hlo(){
+            document.getElementsByClassName("con2")[0].style.display="none"
+        }
+    </script>
+<div class="bot">
+    <div> <a href="gadar2.html"><i</a><img src="2.jpg"/></div>
+    <div> <a href="jailer.html"><i</a><img src="1.webp"/></div>
+    <div> <a href="polishetty.html"><i</a><img src="3.jpg"/></div>
+    <div> <a href="pathaan.html"><i</a><img src="5.jpg"/></div>
+    <div> <a href="kushi.html"><i</a><img src="4.jpg"/></div>
+    <div> <a href="jawan.html"><i</a><img src="6.jpeg"/></div> 
+    <div> <a href="djtillu.html"><i</a><img src="7.jpeg"/></div>
+    <div> <a href="bro.html"><i</a><img src="8.jpg"/></div>
+    <div> <a href="memufamous.html"><i</a><img src="13.jpeg"/></div>
+    <div><a href="tiger3.html"><i</a><img src="14.jpg"/></div>
+    <div><a href="pathu.html"><i</a><img src="12.jpeg"/></div>
+    <div><a href="barbie.html"><i</a><img src="10.jpeg"/></div>
+    <div><a href="rocky.html"><i</a><img src="11.jpeg"/></div>
+    <div><a href="war.html"><i</a><img src="15.jpeg"/></div>
+    <div> <a href="hhvm.html"><i</a><img src="9.webp"/></div>
+</div>
+<div id="footer">
+    <p class="alignleft">
+        <a href="#">Contact |</a>
+        <a href="#">DCMA |</a>
+        <a href="#">T & C |</a>
+    </p>
+    <p class="alignright">
+        <a href="#"> &#169; 2023 IBOMMA</a>
+    </p>
+</div>
+</div>
+</body>
+</html>

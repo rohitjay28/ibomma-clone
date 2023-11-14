@@ -1,0 +1,362 @@
+* {
+  padding: 0px;
+  outline: 0px;
+  margin: 0px;
+}
+body {
+  background-color: #282828;
+}
+nav {
+  background: #2c2e30;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 60px;
+  padding: 0 100px;
+}
+nav .logo {
+  cursor: pointer;
+}
+nav .nav-items {
+  display: flex;
+  flex: 1;
+  margin-left: 330px;
+  padding: 0 0 0 40px;
+}
+nav .nav-items a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 15px;
+}
+nav .nav-items a i {
+  color: #368338e1;
+  padding: 5px;
+}
+nav form {
+  display: flex;
+  width: 30%;
+  height: 40px;
+  padding: 2px;
+  background: #1e232b;
+  border-radius: 30px;
+  border: 2px solid rgba(155, 155, 155, 0.2);
+}
+nav form .search-data {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  background: none;
+}
+nav form button {
+  padding: 0 15px;
+  color: #fff;
+  font-size: 17px;
+  background: #368338e1;
+  border: none;
+  /* border-radius: 40px;  */
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  cursor: pointer;
+}
+nav form button:hover {
+  background: #2d6b2fe1;
+}
+.content {
+  margin-top: 30px;
+  text-align: center;
+  color: darkviolet;
+}
+.content h1 {
+  justify-content: space-between;
+  letter-spacing: 8px;
+  color: orangered;
+}
+.content p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.content button {
+  border: 2px;
+  padding: 10px;
+  color: darkred;
+  margin-top: 20px;
+  gap: 10px;
+}
+.content button:hover {
+  background: green;
+  cursor: pointer;
+}
+.submenu {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: chocolate;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 15px;
+  top: 40%;
+  bottom: 39%;
+}
+.content button:hover .submenu {
+  display: flex;
+}
+.content button:hover {
+  background: green;
+  cursor: pointer;
+}
+.con {
+  margin-top: 20px;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.con div {
+  width: 22%;
+  height: 100%;
+}
+.con div img {
+  width: 100%;
+  height: 100%;
+}
+.left,
+.right {
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: darkgreen;
+}
+.con2 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+  z-index: 5;
+  position: fixed;
+  top: 0%;
+}
+/* .open-con {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  } */
+.open-con {
+  width: 600px;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  background: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 30px 0;
+  border-radius: 5px;
+  border: 1px solid #1f1f1f;
+  box-shadow: #050505 0 0 8px 0;
+  box-sizing: border-box;
+}
+/* .open-con p{
+      width: 50%;
+      font-size: 30px;
+      padding: 10px;
+      color: white;
+  } */
+.open-con button {
+  padding: 15px;
+  font-size: 18px;
+  background-color: #ffff0a;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  letter-spacing: 0.1em;
+  color: #000;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.open-con p {
+  color: #ccc;
+  margin-top: 20px;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  font-weight: 500;
+}
+.bot {
+  margin-top: 50px;
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding-left: 100px;
+}
+.bot > div {
+  width: 18%;
+  height: 40%;
+  margin-bottom: 10px;
+}
+.bot img {
+  width: 100%;
+  height: 100%;
+}
+.bot img:hover {
+  scale: 1.1;
+  transition: 1s ease-out;
+}
+.content1 {
+  width: 550px;
+  height: 270px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content1 p img {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.title {
+  font-size: 45px;
+  color: white;
+  margin-left: 5px;
+}
+.year {
+  font-size: 20px;
+  color: darkorange;
+  margin-left: 5px;
+}
+.genres {
+  font-size: 20px;
+  color: darkorchid;
+  margin-left: 5px;
+}
+.cast span {
+  font-weight: bold;
+  color: orangered;
+}
+.cast {
+  font-size: 20px;
+  color: gold;
+}
+.director span {
+  font-weight: bold;
+  color: orangered;
+}
+.director {
+  font-size: 20px;
+  color: gold;
+}
+.btn {
+  color: white;
+}
+.btn1 {
+  border: 2px solid black;
+  background-color: black;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.btn2 {
+  border: 2px solid rgba(3, 236, 10, 0.362);
+  background-color: rgba(3, 236, 10, 0.562);
+  font-size: 20px;
+  /* padding: 20px 40px 20px 40px; */
+}
+.ct2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.faq {
+  color: green;
+}
+.video {
+  padding: 40px;
+  padding-bottom: 0px;
+  margin: 40px;
+  margin-bottom: 0px;
+  border: none;
+}
+.but1 {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+.ser-btn1 {
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  border: 1px solid rgb(122, 122, 122);
+  padding: 5px;
+  font-weight: bold;
+  background-color: rgba(17, 223, 48, 0.513);
+}
+.ser-btn2 {
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  border: 1px solid rgb(122, 122, 122);
+  padding: 5px;
+  font-weight: bold;
+  background-color: transparent;
+}
+.ser-btn3 {
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  border: 1px solid rgb(122, 122, 122);
+  padding: 5px;
+  font-weight: bold;
+  background-color: transparent;
+}
+.but1 > a:hover {
+  background-color: rgba(17, 223, 48, 0.513);
+}
+.syn {
+  margin-left: 70px;
+  margin-top: 40px;
+  color: darksalmon;
+}
+.syn span {
+  color: red;
+  font-weight: bold;
+}
+#footer {
+  background-color: #1e232b;
+  margin-top: 175px;
+  height: 100px;
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+}
+.alignleft {
+  float: left;
+  padding: 30px;
+  margin-left: 40px;
+}
+.alignright {
+  float: right;
+  padding: 30px;
+  margin-right: 40px;
+}
